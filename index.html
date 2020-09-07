@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Procrastinate.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/js-favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+<body>
+<div class="cartinka">
+    <img src="resourses/pngwing.com.png" width="500px" style="margin-bottom: 600px">
+    <img src="resourses/mikey.png" class="imagegr" style="">
+</div>
+<div class="header">
+
+    <div class="hellocard">
+        <img src="resourses/icon2.png" class="imageicon">
+        <p class="name ">Тарасенко Владислав</p>
+        <p class="logo2" >Group P3210</p>
+        <p class="logo2" >Laba 2122</p>
+        <p class="logo2" >first draft</p>
+
+    </div>
+    <p class="logo">Procrastinate.</p>
+    <div class="button">Ещё идея</div>
+    
+</div>
+
+<img class="image" src="https://code.s3.yandex.net/web-code/procrastinate/9.png">
+
+<div class="advice">
+    <span>Не писать код, а</span>
+    <span class="phrase">что бы поделать?</span>
+    <img class="cursor" src="https://code.s3.yandex.net/web-code/cursor.gif">
+</div>
+
+<div class="grafik">
+    <!--<canvas id="canvas" width="300" height="300"></canvas>-->
+ <img src="resourses/grafik.jpg" class="imagegr">
+
+    <h2 class="logo3">Сможеш ли ты попасть в область?</h2>
+</div>
+<div class="coordinate">
+    <div class="buttonEnter">
+        <form action="server.php" method="GET">
+            <button type="button" class="Enter_button " id="enter">Enter</button>
+        </form>
+    </div>
+
+    <div class="X_coordinate">
+        <span> X: </span>
+        <button type="button" class="X_button" id="x-5" onclick="x_choosen(id)"  value="-5">-5</button>
+        <button type="button" class="X_button" id="x-4" onclick="x_choosen(id)" value="-4">-4</button>
+        <button type="button" class="X_button " id="x-3" onclick="x_choosen(id)" value="-3">-3</button>
+        <button type="button" class="X_button" id="x-2" onclick="x_choosen(id)" value="-2">-2</button>
+        <button type="button" class="X_button" id="x-1" onclick="x_choosen(id)" value="-1">-1</button>
+        <button type="button" class="X_button" id="x0" onclick="x_choosen(id)" value="0">0</button>
+        <button type="button" class="X_button" id="x1" onclick="x_choosen(id)" value="1">1</button>
+        <button type="button" class="X_button" id="x2" onclick="x_choosen(id)" value="2">2</button>
+        <button type="button" class="X_button" id="x3" onclick="x_choosen(id)" value="3">3</button>
+    </div>
+
+    <div class="Y_coordinate">
+        <span> Y: </span>
+        <input type="text" name="Y_coordinate" id="Y_field"  placeholder="[-5..5] " class="qw">
+    </div>
+
+    <div class="R_coordinate">
+        <span> R: </span>
+        <input autocomplete="off" type="text" name="R_coordinate" id="R_field"  placeholder="[2..5]" class="qw2">
+    </div>
+
+    <span style="display: block; padding-bottom: 20px; margin-left: 100px;  font-size: 20px;" id="ph"> Введите корректные значения </span>
+
+</div>
+
+
+                <table  border="6px" class="result-table" style="margin-top: 50px; box-shadow: #c42929 " >
+                    <thead>
+                    <td> X </td>
+                    <td> Y </td>
+                    <td> R </td>
+                    <td> RESULT </td>
+                    <td> Current time </td>
+                    <td id = 'last'> Computation time </td>
+                    </thead>
+                    <tbody id="table_out">
+                    </tbody>
+                </table>
+
+
+<p class="footer" >2020 Vl@dislav Tarasenko </p>
+
+<script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
+<script src="script.js"></script>
+<script src="Valid.js"></script>
+<script src="send_get.js"></script>
+<script src="draw_table.js"></script>
+</body>
+</html>
