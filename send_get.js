@@ -1,12 +1,15 @@
 let data_cookies = ''
-function create_get(x,y,r){
+function create_get(){
 
     const xhr = new XMLHttpRequest();
+
+    let checkY = analysis(value_Y);
 
 
     let url = new URL('http://localhost:8080/server.php');
     url.searchParams.set('x',value_X);
     url.searchParams.set('y',value_Y);
+    url.searchParams.set('yy', checkY);
     url.searchParams.set('r',value_R);
 
     xhr.onreadystatechange = function () {

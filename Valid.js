@@ -5,7 +5,6 @@ let inputR = document.getElementById("R_field");
 let inputYpole = document.querySelector('.qw');
 let inputRpole = document.querySelector('.qw2');
 let flag;
-let flag1;
 let value_X;
 let value_Y;
 let value_R;
@@ -24,14 +23,25 @@ function x_choosen(id){
 
 }
 
+function set_r(){
+    if (document.getElementById('r1').checked) {
+        value_R = document.getElementById('r1').value;
+    }else if (document.getElementById('r2').checked) {
+        value_R = document.getElementById('r2').value;
+    }else if (document.getElementById('r3').checked) {
+        value_R = document.getElementById('r3').value ;
+    }else if (document.getElementById('r4').checked) {
+        value_R = document.getElementById('r4').value;
+    }else if (document.getElementById('r5').checked) {
+        value_R = document.getElementById('r5').value;
+    }
+}
 
 
 
 enterbutton.addEventListener('click',function () {
     validY();
-    validR();
     checkflag()
-
 })
 
 function validY(){
@@ -64,44 +74,10 @@ function validY(){
         }
     }
 }
-function validR(){
-    if(!/^-?\d+(\.|,)?\d*$/i.test(inputR.value)){
-        inputR.value = "";
-        inputRpole.style.backgroundColor = "rgba(250, 50, 50, .4)";
-        flag1 = false;
-    }else{
-        //  error.textContent = "";
-        let r = inputR.value.replace(/[,]/,".");
-        if(r<2 || r>5){
-            //   error.textContent = "Ошибка: Выход за пределы, введите число в интервале [-5;5]";
-            inputR.value = "";
-            inputRpole.style.backgroundColor = "rgba(250, 50, 50, .4)";
-            flag1 = false;
-        }else if(Number(r.split(".")[0]) >=2 && Number(r.split(".")[1])>0){
-            //    error.textContent = "Ошибка: Выход за пределы, введите число в интервале [-5;5]";
-            inputR.value = "";
-            inputRpole.style.backgroundColor = "rgba(250, 50, 50, .4)";
-            flag1 = false;
-        }else if(Number(r.split(".")[0]) <=2 && Number(r.split(".")[1])>0){
-            //    error.textContent = "Ошибка: Выход за пределы, введите число в интервале [-5;5]";
-            inputR.value = "";
-            inputRpole.style.backgroundColor = "rgba(250, 50, 50, .4)";
-            flag1 = false;
-        }else {
-            //   document.getElementById('label_y').innerText = "Y = " + input.value;
-            value_R = inputR.value.replace(/[,]/,".");
-            inputRpole.style.backgroundColor = "rgb(137,238,19, .4)";
-            flag1 = true;
-        }
-    }
-}
-
 function checkflag() {
     if (value_X) {
-        if (flag && flag1) {
+        if (flag) {
             create_get();
-
-
         }
 
     }else {
