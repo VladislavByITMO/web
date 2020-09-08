@@ -7,7 +7,7 @@ let inputRpole = document.querySelector('.qw2');
 let flag;
 let value_X;
 let value_Y;
-let value_R;
+let value_R = "1";
 
 
 

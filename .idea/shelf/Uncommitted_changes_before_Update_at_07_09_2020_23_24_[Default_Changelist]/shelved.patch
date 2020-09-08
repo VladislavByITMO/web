@@ -1,0 +1,118 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"ru\" xmlns=\"http://www.w3.org/1999/html\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Procrastinate.</title>\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n    <link rel=\"icon\" type=\"image\" href=\"https://code.s3.yandex.net/web-code/js-favicon.ico\">\r\n    <script src=\"https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js\"></script>\r\n</head>\r\n<body>\r\n<div class=\"cartinka\">\r\n    <img src=\"resourses/pngwing.com.png\" width=\"500px\" style=\"margin-bottom: 600px\">\r\n    <img src=\"resourses/mikey.png\" class=\"imagegr\" style=\"\">\r\n</div>\r\n<div class=\"header\">\r\n\r\n    <div class=\"hellocard\">\r\n        <img src=\"resourses/icon2.png\" class=\"imageicon\">\r\n        <p class=\"name \">Тарасенко Владислав</p>\r\n        <p class=\"logo2\" >Group P3210</p>\r\n        <p class=\"logo2\" >Laba 2122</p>\r\n        <p class=\"logo2\" >first draft</p>\r\n\r\n    </div>\r\n    <p class=\"logo\">Procrastinate.</p>\r\n    <div class=\"button\">Ещё идея</div>\r\n    \r\n</div>\r\n\r\n<img class=\"image\" src=\"https://code.s3.yandex.net/web-code/procrastinate/9.png\">\r\n\r\n<div class=\"advice\">\r\n    <span>Не писать код, а</span>\r\n    <span class=\"phrase\">что бы поделать?</span>\r\n    <img class=\"cursor\" src=\"https://code.s3.yandex.net/web-code/cursor.gif\">\r\n</div>\r\n\r\n<div class=\"grafik\">\r\n    <!--<canvas id=\"canvas\" width=\"300\" height=\"300\"></canvas>-->\r\n <img src=\"resourses/grafik.jpg\" class=\"imagegr\">\r\n\r\n    <h2 class=\"logo3\">Сможеш ли ты попасть в область?</h2>\r\n</div>\r\n<div class=\"coordinate\">\r\n    <div class=\"buttonEnter\">\r\n        <form action=\"server.php\" method=\"GET\">\r\n            <button type=\"button\" class=\"Enter_button \" id=\"enter\">Enter</button>\r\n        </form>\r\n    </div>\r\n\r\n    <div class=\"X_coordinate\">\r\n        <span> X: </span>\r\n        <button type=\"button\" class=\"X_button\" id=\"x-5\" onclick=\"x_choosen(id)\"  value=\"-5\">-5</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x-4\" onclick=\"x_choosen(id)\" value=\"-4\">-4</button>\r\n        <button type=\"button\" class=\"X_button \" id=\"x-3\" onclick=\"x_choosen(id)\" value=\"-3\">-3</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x-2\" onclick=\"x_choosen(id)\" value=\"-2\">-2</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x-1\" onclick=\"x_choosen(id)\" value=\"-1\">-1</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x0\" onclick=\"x_choosen(id)\" value=\"0\">0</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x1\" onclick=\"x_choosen(id)\" value=\"1\">1</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x2\" onclick=\"x_choosen(id)\" value=\"2\">2</button>\r\n        <button type=\"button\" class=\"X_button\" id=\"x3\" onclick=\"x_choosen(id)\" value=\"3\">3</button>\r\n    </div>\r\n\r\n    <div class=\"Y_coordinate\">\r\n        <span> Y: </span>\r\n        <input type=\"text\" name=\"Y_coordinate\" id=\"Y_field\"  placeholder=\"[-5..5] \" class=\"qw\">\r\n    </div>\r\n\r\n    <div class=\"R_coordinate\">\r\n        <span> R: </span>\r\n        <input autocomplete=\"off\" type=\"text\" name=\"R_coordinate\" id=\"R_field\"  placeholder=\"[2..5]\" class=\"qw2\">\r\n    </div>\r\n\r\n    <span style=\"display: block; padding-bottom: 20px; margin-left: 100px;  font-size: 20px;\" id=\"ph\"> Введите корректные значения </span>\r\n\r\n</div>\r\n\r\n\r\n                <table  border=\"6px\" class=\"result-table\" style=\"margin-top: 50px; box-shadow: #c42929 \" >\r\n                    <thead>\r\n                    <td> X </td>\r\n                    <td> Y </td>\r\n                    <td> R </td>\r\n                    <td> RESULT </td>\r\n                    <td> Current time </td>\r\n                    <td id = 'last'> Computation time </td>\r\n                    </thead>\r\n                    <tbody id=\"table_out\">\r\n                    </tbody>\r\n                </table>\r\n\r\n\r\n<p class=\"footer\" >2020 Vl@dislav Tarasenko </p>\r\n\r\n<script src=\"https://code.s3.yandex.net/web-code/smoothly.js\"></script>\r\n<script src=\"script.js\"></script>\r\n<script src=\"Valid.js\"></script>\r\n<script src=\"send_get.js\"></script>\r\n<script src=\"draw_table.js\"></script>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision cc58533646c474b18f20e4d29b3e37b7b95160df)
++++ index.html	(date 1599509857531)
+@@ -70,7 +70,16 @@
+ 
+     <div class="R_coordinate">
+         <span> R: </span>
+-        <input autocomplete="off" type="text" name="R_coordinate" id="R_field"  placeholder="[2..5]" class="qw2">
++     <!--   <input autocomplete="off" type="text" name="R_coordinate" id="R_field"  placeholder="[2..5]" class="qw2"> -->
++        <input type="radio" id="r1" name="R" value="1" onclick="draw()"style="margin-right: 40px; text-align: center">1
++
++        <input type="radio" id="r2" name="R" value="2" onclick="draw()"style="margin-right: 40px; text-align: center">2
++
++        <input type="radio" id="r3" name="R" value="3" onclick="draw()"style="margin-right: 40px; text-align: center">3
++
++        <input type="radio" id="r4" name="R" value="4" onclick="draw()"style="margin-right: 40px; text-align: center">4
++
++        <input type="radio" id="r5" name="R" value="5" onclick="draw()"style="margin-right: 40px; text-align: center">5
+     </div>
+ 
+     <span style="display: block; padding-bottom: 20px; margin-left: 100px;  font-size: 20px;" id="ph"> Введите корректные значения </span>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3194dda2-2abc-48e4-b477-72032e25358f\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\" />\r\n  <component name=\"ProjectId\" id=\"1h7y2iq4Oc19TDTlsGjHO2gdIWg\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"restartRequiresConfirmation\" value=\"false\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taras\\PhpstormProjects\\untitled3\" />\r\n      <recent name=\"C:\\Users\\Taras\\PhpstormProjects\\untitled3\\resourses\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"start\" type=\"PhpBuiltInWebServerConfigurationType\" factoryName=\"PHP Built-in Web Server\" document_root=\"$PROJECT_DIR$\" port=\"8080\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3194dda2-2abc-48e4-b477-72032e25358f\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1599376219885</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1599376219885</updated>\r\n      <workItem from=\"1599376220956\" duration=\"40248000\" />\r\n      <workItem from=\"1599506579723\" duration=\"968000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"349\" y=\"86\" key=\"#CLI_Interpreters\" timestamp=\"1599492457291\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"349\" y=\"86\" key=\"#CLI_Interpreters/0.0.1536.824@0.0.1536.824\" timestamp=\"1599492457291\" />\r\n    <state x=\"475\" y=\"74\" key=\"#PHP\" timestamp=\"1599492458630\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"475\" y=\"74\" key=\"#PHP/0.0.1536.824@0.0.1536.824\" timestamp=\"1599492458630\" />\r\n    <state x=\"223\" y=\"59\" width=\"1089\" height=\"765\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1599492460471\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"223\" y=\"59\" width=\"1089\" height=\"765\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1599492460471\" />\r\n    <state x=\"550\" y=\"186\" key=\"FileChooserDialogImpl\" timestamp=\"1599492455918\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"550\" y=\"186\" key=\"FileChooserDialogImpl/0.0.1536.824@0.0.1536.824\" timestamp=\"1599492455918\" />\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1599505281651\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824\" timestamp=\"1599505281651\" />\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.center\" timestamp=\"1599505281651\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824\" timestamp=\"1599505281651\" />\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.left\" timestamp=\"1599505281651\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824\" timestamp=\"1599505281651\" />\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.right\" timestamp=\"1599505281651\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state width=\"1493\" height=\"129\" key=\"GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824\" timestamp=\"1599505281651\" />\r\n    <state x=\"604\" y=\"336\" key=\"NewPhpFileDialog\" timestamp=\"1599467348478\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"604\" y=\"336\" key=\"NewPhpFileDialog/0.0.1536.824@0.0.1536.824\" timestamp=\"1599467348478\" />\r\n    <state x=\"425\" y=\"187\" key=\"run.anything.popup\" timestamp=\"1599390366576\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"425\" y=\"187\" key=\"run.anything.popup/0.0.1536.824@0.0.1536.824\" timestamp=\"1599390366576\" />\r\n    <state x=\"431\" y=\"145\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1599423902732\">\r\n      <screen x=\"0\" y=\"0\" width=\"1536\" height=\"824\" />\r\n    </state>\r\n    <state x=\"431\" y=\"145\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1536.824@0.0.1536.824\" timestamp=\"1599423902732\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision cc58533646c474b18f20e4d29b3e37b7b95160df)
++++ .idea/workspace.xml	(date 1599510294702)
+@@ -1,7 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="3194dda2-2abc-48e4-b477-72032e25358f" name="Default Changelist" comment="" />
++    <list default="true" id="3194dda2-2abc-48e4-b477-72032e25358f" name="Default Changelist" comment="hello">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -19,8 +23,12 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+   <component name="ProjectId" id="1h7y2iq4Oc19TDTlsGjHO2gdIWg" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -53,12 +61,24 @@
+       <option name="presentableId" value="Default" />
+       <updated>1599376219885</updated>
+       <workItem from="1599376220956" duration="40248000" />
+-      <workItem from="1599506579723" duration="968000" />
++      <workItem from="1599506579723" duration="2846000" />
++    </task>
++    <task id="LOCAL-00001" summary="hello">
++      <created>1599507635832</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1599507635832</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="hello" />
++    <option name="LAST_COMMIT_MESSAGE" value="hello" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="349" y="86" key="#CLI_Interpreters" timestamp="1599492457291">
+@@ -77,6 +97,14 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="550" y="186" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599492455918" />
++    <state x="647" y="310" key="Github.ShareDialog" timestamp="1599507552410">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1599507552410" />
++    <state x="584" y="117" key="Github.UntrackedFilesDialog" timestamp="1599507571576">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="584" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599507571576" />
+     <state width="1493" height="129" key="GridCell.Tab.0.bottom" timestamp="1599505281651">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+@@ -97,6 +125,14 @@
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>
+     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1599467348478" />
++    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599507638322">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599507638322" />
++    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599510294648">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1599510294648" />
+     <state x="425" y="187" key="run.anything.popup" timestamp="1599390366576">
+       <screen x="0" y="0" width="1536" height="824" />
+     </state>

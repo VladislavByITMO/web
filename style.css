@@ -45,7 +45,7 @@ body {
 
     margin-bottom:60px;
     padding: 10px 10px 10px;
-    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+    box-shadow: 4px 4px 5px rgb(213, 250, 50);
     position: fixed;
     left: 50px ;
     top: 50px;
@@ -95,8 +95,8 @@ h3{
     transition: opacity 0.6s;
 }
 .buttonEnter{
-    margin-left: 556px;
-    margin-top: 130px;
+    margin-left: 542px;
+    margin-top: 110px;
     position: absolute;
 
 }
@@ -196,17 +196,52 @@ h2{
     margin-bottom:20px;
     margin-left: 100px;
 }
+
+input[type='radio'],
+label {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4a4848;
+    border: 2px solid rgba(250, 50, 50, .4);
+}
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(137,238,19,.4);
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
 .X_coordinate button:hover {
     background-color: rgba(250, 50, 50, .4);
 }
-.R_coordinate input {
-    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
-    height: 25px;
-    width: 380px;
-    border-radius: 5px;
-    background-color:  #4a4848;
-    color: white;
-}
+
+
+
 .input_field {
     width: 100%;
     margin-top: 50px;
@@ -239,6 +274,16 @@ h2{
 #last{
     width: 190px;
 }
+#longY{
+  width: 200px;
+}
+#tbR {
+    width: 30px;
+}
+#tbX {
+    width: 30px;
+}
+
 
 canvas {
     display: block;

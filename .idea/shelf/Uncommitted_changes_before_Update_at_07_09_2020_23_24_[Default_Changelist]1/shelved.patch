@@ -1,0 +1,37 @@
+Index: style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@font-face {\r\n    src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Book.woff);\r\n    font-family: 'Suisse';\r\n    font-weight: normal;\r\n}\r\n\r\n@font-face {\r\n    src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Bold.woff\r\n    );\r\n    font-family: 'Suisse';\r\n    font-weight: bold;\r\n}\r\n\r\nhtml {\r\n    height: 100%;\r\n    margin: 0;\r\n    -webkit-font-smoothing: antialiased;\r\n}\r\n\r\nbody {\r\n    background-color: #323131;\r\n\r\n    color: white;\r\n    position: relative;\r\n    max-width: 700px;\r\n    min-height: 100%;\r\n    margin: 0 auto;\r\n    font-family: 'Suisse';\r\n    box-sizing: border-box;\r\n    padding: 36px;\r\n}\r\n.cartinka{\r\n    position: absolute;\r\n    margin-top: 0px;\r\n    width: 500px;\r\n    margin-left:600px;\r\n    z-index: 1;\r\n}\r\n.header {\r\n    display: flex;\r\n    align-items: baseline;\r\n    justify-content: space-between;\r\n}\r\n.hellocard{\r\n\r\n    margin-bottom:60px;\r\n    padding: 10px 10px 10px;\r\n    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n    position: fixed;\r\n    left: 50px ;\r\n    top: 50px;\r\n}\r\n.name{\r\n    font-family:sans-serif;\r\n    font-size: large;\r\n}\r\n.imageicon{\r\n    width: 100px;\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\nh3{\r\n\r\n    font-family: 'Suisse', serif;\r\n    font-weight: normal;\r\n    display: inline;\r\n}\r\n\r\n.logo {\r\n    font-weight: bold;\r\n    font-size: 24px;\r\n    margin: 0;\r\n}\r\n.logo3 {\r\n    margin-top: 10px;\r\n    font-weight: bold;\r\n    font-size: 24px;\r\n}\r\n.logo2{\r\n    font-weight: normal;\r\n    font-size: 18px;\r\n    margin: 0;\r\n}\r\n\r\n.button {\r\n    width: 130px;\r\n    height: 40px;\r\n    padding-top: 10px;\r\n    box-sizing: border-box;\r\n    border: 1px solid white;\r\n    text-align: center;\r\n    font-size: 14px;\r\n    cursor: pointer;\r\n    transition: opacity 0.6s;\r\n}\r\n.buttonEnter{\r\n    margin-left: 556px;\r\n    margin-top: 130px;\r\n    position: absolute;\r\n\r\n}\r\n.Enter_button{\r\n    cursor: pointer;\r\n    transition: opacity 0.6s;\r\n    font-size: 20px;\r\n    border-color: rgba(250, 50, 50, .4);\r\n    border-radius: 5px;\r\n    margin-right: 5px;\r\n    background: #4a4848;\r\n    width: 65px;\r\n    height: 55px;\r\n    color: white;\r\n    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.button:hover {\r\n    opacity: 0.5;\r\n}\r\n.X_button:hover{\r\n    opacity: 0.5;\r\n}\r\n.Enter_button:hover{\r\n    opacity: 0.5;\r\n}\r\n.image {\r\n    width: 80%;\r\n    display: block;\r\n    margin: 60px auto 50px;\r\n}\r\n\r\n.advice {\r\n    font-size: 42px;\r\n    font-weight: bold;\r\n    line-height: 1.1;\r\n    margin-bottom: 70px;\r\n}\r\n.grafik{\r\n    margin-top: 300px;\r\n\r\n    width: 100%;\r\n}\r\nh2{\r\n    margin-left: 100px;\r\n}\r\n.imagegr{\r\n    width: 280px;\r\n\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n\r\n}\r\n\r\n.coordinate{\r\n    margin-top: 0;\r\n    width: 100%;\r\n    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n}\r\n.X_coordinate{\r\n    margin-left: 100px;\r\n}\r\n.X_coordinate button {\r\n    cursor: pointer;\r\n    transition: opacity 0.6s;\r\n    font-size: 13px;\r\n    border-color: rgba(250, 50, 50, .4);\r\n    border-radius: 5px;\r\n    margin-right: 5px;\r\n    background: #4a4848;\r\n    width: 35px;\r\n    height: 25px;\r\n    color: white;\r\n    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n    margin-bottom: 20px;\r\n}\r\n.my_1041{\r\n    background: #79cd25;\r\n    width: 45px;\r\n    height: 45px;\r\n}\r\n.Y_coordinate{\r\n    margin-bottom: 20px;\r\n    margin-left: 100px;\r\n}\r\n.Y_coordinate input {\r\n    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n    height: 25px;\r\n    width: 380px;\r\n    border-radius: 5px;\r\n    background-color:  #4a4848;\r\n    color: white;\r\n}\r\n.R_coordinate{\r\n    margin-bottom:20px;\r\n    margin-left: 100px;\r\n}\r\n.X_coordinate button:hover {\r\n    background-color: rgba(250, 50, 50, .4);\r\n}\r\n.R_coordinate input {\r\n    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n    height: 25px;\r\n    width: 380px;\r\n    border-radius: 5px;\r\n    background-color:  #4a4848;\r\n    color: white;\r\n}\r\n.input_field {\r\n    width: 100%;\r\n    margin-top: 50px;\r\n    display: block;\r\n    margin-right: 100px;\r\n    border-radius: 100px;\r\n    background-color: #0f0324;\r\n}\r\n\r\n\r\n\r\n\r\n.tabelzone{\r\n    table-shadow: 4px 4px 5px rgba(250, 50, 50, .4);\r\n    width: 100%;\r\n    background-color: antiquewhite;\r\n    height: 400px;\r\n    position: center;\r\n}\r\n\r\n.result-table{\r\n    margin-left: -40px;\r\n    text-align: center;\r\n    table-layout: fixed;\r\n    width: 720px;\r\n    border-collapse: collapse;\r\n    border: 3px solid rgba(250, 50, 50, .4);\r\n\r\n}\r\n#last{\r\n    width: 190px;\r\n}\r\n\r\ncanvas {\r\n    display: block;\r\n    margin: auto ;\r\n    position: center;\r\n    border: 4px solid rgba(250, 50, 50, .4);\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n.footer {\r\n    font-family: 'Helvetica', 'Arial', sans-serif;\r\n\r\n    font-size: 16px;\r\n    bottom: 36px;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- style.css	(revision cc58533646c474b18f20e4d29b3e37b7b95160df)
++++ style.css	(date 1599510057222)
+@@ -196,17 +196,19 @@
+     margin-bottom:20px;
+     margin-left: 100px;
+ }
++
++.R_coordinate radio {
++    cursor: pointer;
++    transition: opacity 0.6s;
++    border-color: rgba(250, 50, 50, .4);
++    background: #4a4848;
++    color: white;
++    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
++}
+ .X_coordinate button:hover {
+     background-color: rgba(250, 50, 50, .4);
+ }
+-.R_coordinate input {
+-    box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+-    height: 25px;
+-    width: 380px;
+-    border-radius: 5px;
+-    background-color:  #4a4848;
+-    color: white;
+-}
++
+ .input_field {
+     width: 100%;
+     margin-top: 50px;

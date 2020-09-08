@@ -19,13 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3194dda2-2abc-48e4-b477-72032e25358f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/analysis.js" afterDir="false" />
+    <list default="true" id="3194dda2-2abc-48e4-b477-72032e25358f" name="Default Changelist" comment="hello">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Valid.js" beforeDir="false" afterPath="$PROJECT_DIR$/Valid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/send_get.js" beforeDir="false" afterPath="$PROJECT_DIR$/send_get.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +46,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1h7y2iq4Oc19TDTlsGjHO2gdIWg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -90,6 +90,7 @@
       <workItem from="1599376220956" duration="40248000" />
       <workItem from="1599506579723" duration="968000" />
       <workItem from="1599507704192" duration="2339000" />
+      <workItem from="1599546258376" duration="930000" />
     </task>
     <servers />
   </component>
@@ -106,16 +107,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="349" y="86" key="#CLI_Interpreters" timestamp="1599492457291">
+    <state x="349" y="86" key="#CLI_Interpreters" timestamp="1599510348692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="86" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1599492457291" />
-    <state x="643" y="122" width="700" height="759" key="#PHP" timestamp="1599507713769">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="349" y="86" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1599510348692" />
+    <state x="475" y="74" width="700" height="759" key="#PHP" timestamp="1599510354975">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="475" y="74" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1599492458630" />
+    <state x="475" y="74" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1599510354975" />
     <state x="643" y="122" width="700" height="759" key="#PHP/72.27.1848.1053@72.27.1848.1053" timestamp="1599507713769" />
     <state x="340" y="64" width="1311" height="1016" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599507713921">
       <screen x="72" y="27" width="1848" height="1053" />
@@ -126,25 +128,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="186" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599492455918" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1599509828151">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1493" height="165" key="GridCell.Tab.0.bottom" timestamp="1599547127374">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="129" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599505281651" />
+    <state width="1493" height="165" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599547127374" />
     <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1599509828151" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1599509828147">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1493" height="165" key="GridCell.Tab.0.center" timestamp="1599547127373">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="129" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599505281651" />
+    <state width="1493" height="165" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599547127373" />
     <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1599509828147" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1599509828146">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1493" height="165" key="GridCell.Tab.0.left" timestamp="1599547127373">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="129" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599505281651" />
+    <state width="1493" height="165" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599547127373" />
     <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1599509828146" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1599509828150">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state width="1493" height="165" key="GridCell.Tab.0.right" timestamp="1599547127374">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="129" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599505281651" />
+    <state width="1493" height="165" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599547127374" />
     <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1599509828150" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1599467348478">
       <screen x="0" y="0" width="1536" height="824" />
@@ -158,17 +160,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599423902732" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Valid.js</url>
-          <line>47</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

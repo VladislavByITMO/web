@@ -41,7 +41,7 @@
     <!--<canvas id="canvas" width="300" height="300"></canvas>-->
  <img src="resourses/grafik.jpg" class="imagegr">
 
-    <h2 class="logo3">Сможеш ли ты попасть в область?</h2>
+    <h2 class="logo3">Сможешь ли ты попасть в область?</h2>
 </div>
 <div class="coordinate">
     <div class="buttonEnter">
@@ -70,17 +70,23 @@
 
     <div class="R_coordinate">
         <span> R: </span>
-        <input type="radio" id="r1" name="R" value="1" onclick="set_r()">1
+        <!--   <input autocomplete="off" type="text" name="R_coordinate" id="R_field"  placeholder="[2..5]" class="qw2"> -->
+        <input class="radiob" type="radio" id="r1" name="R" value="1" onclick="set_r()"  checked  style="margin-right: 40px; " >
+        <a style="margin-left: -35px; margin-right: 45px">1</a>
 
-        <input type="radio" id="r2" name="R" value="2" onclick="set_r()">2
+        <input class="radiob" type="radio" id="r2" name="R" value="2" onclick="set_r()"style="margin-right: 40px;">
+        <a style="margin-left: -35px; margin-right: 45px">2</a>
 
-        <input type="radio" id="r3" name="R" value="3" onclick="set_r()">3
+        <input class="radiob" type="radio" id="r3" name="R" value="3" onclick="set_r()"style="margin-right: 40px;">
+        <a style="margin-left: -35px; margin-right: 45px">3</a>
 
-        <input type="radio" id="r4" name="R" value="4" onclick="set_r()">4
+        <input class="radiob" type="radio" id="r4" name="R" value="4" onclick="set_r()"style="margin-right: 40px;">
+        <a style="margin-left: -35px; margin-right: 45px">4</a>
 
-        <input type="radio" id="r5" name="R" value="5" onclick="set_r()">5
-        <!--<input autocomplete="off" type="text" name="R_coordinate" id="R_field"  placeholder="[2..5]" class="qw2">-->
+        <input class="radiob" type="radio" id="r5" name="R" value="5" onclick="set_r()"style="margin-right: 40px;">
+        <a style="margin-left: -35px; margin-right: 45px">5</a>
     </div>
+
 
     <span style="display: block; padding-bottom: 20px; margin-left: 100px;  font-size: 20px;" id="ph"> Введите корректные значения </span>
 
@@ -89,9 +95,9 @@
 
                 <table  border="6px" class="result-table" style="margin-top: 50px; box-shadow: #c42929 " >
                     <thead>
-                    <td> X </td>
-                    <td> Y </td>
-                    <td> R </td>
+                    <td id = "tbX"> X </td>
+                    <td id="longY"> Y </td>
+                    <td id = "tbR"> R </td>
                     <td> RESULT </td>
                     <td> Current time </td>
                     <td id = 'last'> Computation time </td>
